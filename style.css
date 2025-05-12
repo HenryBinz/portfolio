@@ -435,3 +435,50 @@ ol {
   text-decoration: underline;
   color: #f86e00;
 }
+
+.vermittler-hinweis {
+  display: block;
+  background-color: #f5f1e1;
+  color: #444;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.vermittler-hinweis:hover {
+  background-color: #ffeec0;
+}
+
+#last-words {
+  scroll-margin-top: 40px; /* oder je nach Header-Höhe anpassen */
+}
+
+.about-me-box {
+  position: fixed;
+  top: 230px;
+  left: 0;
+  width: 220px;
+  background-color: #fff6d6;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 998;
+  text-align: center;
+}
+
+.about-me-box h4 {
+  margin-top: 0;
+}
+
+.about-img {
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
