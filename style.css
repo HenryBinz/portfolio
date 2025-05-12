@@ -118,13 +118,14 @@ ol {
   font-size: 42px;
   font-weight: bold;
   text-align: center;
+  margin-top: 100px;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-  padding-top: 120px;
+  padding-top: 25px;
   text-align: center;
 }
 
@@ -194,6 +195,41 @@ nav a:link {
   50% {
     transform: translateY(-6px);
   }
+}
+
+.project-preview {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 30px auto; /* oben 0, unten 30px Abstand */
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.project-preview .project-toggle {
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.project-preview .project-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 15px 10px;
+}
+
+.project-preview:hover .project-content {
+  max-height: 500px;
+}
+
+.project-preview img {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
 }
 
 body {
