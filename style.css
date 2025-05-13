@@ -486,3 +486,19 @@ ol {
   border-radius: 10px;
   margin-bottom: 10px;
 }
+
+.animated-heading {
+  animation: pulseText 2.5s ease-in-out infinite;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+@keyframes pulseText {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
